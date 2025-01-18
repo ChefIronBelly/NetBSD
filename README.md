@@ -1,4 +1,4 @@
-NetBSD momofuku 10.1 NetBSD 10.1 (GENERIC) #0: Mon Dec 16 13:08:11 UTC 2024
+NetBSD momofuku 10.99.12 NetBSD 10.99.12 (GENERIC) #0: Fri Jan 17 17:43:14 UTC 2025
 
 
 
