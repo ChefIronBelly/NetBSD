@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. $HOME/.wmrc
+#. $HOME/.wmrc
+#. $HOME/.cache/wal/colors.Xresources
 
-#dmenu_run -i -p "Search" -x 290  -y 0  -w 300 $DMENU_FN $DMENU_NB $DMENU_NF $DMENU_SF $DMENU_SB
-dmenu_run -i $DMENU_FN $DMENU_NB $DMENU_NF $DMENU_SF $DMENU_SB
+dmenu_run -i -p "Search" $DMENU_FN $DMENU_NB $DMENU_NF $DMENU_SF $DMENU_SB
