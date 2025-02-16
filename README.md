@@ -1,5 +1,4 @@
-NetBSD momofuku 10.99.12 NetBSD 10.99.12 (GENERIC) #0: Fri Jan 17 17:43:14 UTC 2025
-
+NetBSD momofuku 10.99.12 NetBSD 10.99.12 (GENERIC) #0:
 
 
 
