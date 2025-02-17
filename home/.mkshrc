@@ -6,10 +6,6 @@
 HISTFILE=~/.mksh/history
 HISTSIZE=5000
 
-#for h in ~/.etc/*; do
-#	source "${h}"
-#done
-
 #### SAFETY ####
 
 alias rm='rm -iv'
@@ -30,7 +26,7 @@ alias p='pwd'
 alias manb='man -H'
 alias grep='grep --color=auto'
 alias curl='curl -C - -LO'
-alias install='sudo pkgin install'
+alias add='sudo pkgin install'
 alias remove='sudo pkgin remove'
 alias pupd='sudo pkgin update'
 alias pupg='sudo pkgin full-upgrade'
@@ -70,6 +66,8 @@ alias gc='git commit -m "adds and tweaks"'
 alias umount='sudo umount /mnt/$1'
 alias view='imlib2_view'
 alias grab='imlib2_grab'
+alias stime='sudo ntpdate -v -b in.pool.ntp.org'
+#alias date='date +"%a %b %d, $(date +"%I:%M")"'
 
 PS1=""
  case `id -u` in

@@ -10,7 +10,7 @@ set -x
 now=$(date +"%Y%m%d%I%M""Z")
 mkdir /home/chef/HEAD/${now} && cd $_
 
-for file in kern-GENERIC modules base comp etc man text xbase xcomp xetc xfont xserver
+for file in kern-GENERIC modules base comp etc gpufw.tar.xz man text xbase xcomp xetc xfont xserver
 do
     curl -C - -LO http://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/latest/amd64/binary/sets/${file}.tar.xz
 done
