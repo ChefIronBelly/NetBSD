@@ -1,0 +1,26 @@
+# NetBSD-10.99-*
+
+# start w / NetBSD-10.99.*-amd64-install.img.gz
+
+default install using UFS default sizes
+
+# pkgin install sudo gh pkgconf mksh libXft 
+firefox geany mc mpv yt-dlp mpg123 liberation-ttf
+scrot screenfetch
+
+# visudo enable wheel
+logout
+
+****
+as user
+$ chsh /usr/local/bin/mksh
+
+$ mkdir ~/Source & cd Source
+$ git clone https://github.com/ChefIronBelly/NetBSD.git
+$ cp user files and root files from /boot /etc /home to system
+
+$ cd Source /dwm /dmenu /st and sudo make clean install
+$ sudo mkdir /mnt/usb
+$ sudo audiocfg default 1
+
+# 250218

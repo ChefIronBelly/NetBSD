@@ -4,12 +4,9 @@ at-spi2-core-2.54.0nb4 Assistive Technology Service Provider Interface Core
 bash-5.2.37          The GNU Bourne Again Shell
 brotli-1.1.0         Generic-purpose lossless compression algorithm
 cairo-1.18.2         Vector graphics library with cross-device output support
-colorls-2.2nb2       Uses color with ls(1) to display file attributes
 curl-8.11.1nb1       Client that groks URLs
-cwrappers-20220403   pkgsrc compiler wrappers
 dav1d-1.5.0          AV1 decoder library
 dbus-1.14.10         Message bus system
-digest-20220214      Message digest wrapper utility
 enca-1.15            Extremely Naive Charset Analyser
 ffmpeg6-6.1.2nb6     Decoding, encoding and streaming software (v6.x)
 ffmpeg7-7.1nb4       Decoding, encoding and streaming software (v7.x)
@@ -23,17 +20,11 @@ gdk-pixbuf2-2.42.12  Library for image loading and manipulation
 geany-2.0nb6         Small and lightweight integrated development environment (IDE)
 gh-2.62.0            GitHub CLI
 giflib-5.2.2         GIF image format library
-git-2.48.1           GIT version control suite meta-package
 git-base-2.48.1      GIT Tree History Storage Tool (base package)
-git-contrib-2.48.1   GIT Tree History Storage Tool (contrib)
-git-docs-2.48.1      GIT Tree History Storage Tool (documentation)
-git-perlscripts-2.48.1 Git commands that rely on Perl
 glib2-2.82.2         Some useful routines for C programming (glib2)
-gmake-4.4.1          GNU version of 'make' utility
 gmp-6.3.0            Library for arbitrary precision arithmetic
 gnutls-3.8.8nb2      Transport Layer Security library
 gobject-introspection-1.80.1nb3 GObject Introspection
-gpart-0.1hnb1        Tool to show the partitions on a PC type harddisk
 graphite2-1.3.14nb3  Cross-platform rendering for complex writing systems
 gtk3+-3.24.43nb5     GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-10.1.0      OpenType text shaping engine
@@ -59,7 +50,6 @@ libffi-3.4.6         Foreign function interface
 libgcrypt-1.11.0nb2  GNU cryptographic library
 libgpg-error-1.51    Definitions of common error values for all GnuPG components
 libheif-1.19.5       HEIF and AVIF file format decoder and encoder library
-libidn-1.42          Internationalized Domain Names command line tool
 libidn2-2.3.7        Convert internationalized domain names to/from ASCII Encoding
 libogg-1.3.5nb1      Ogg project codecs library
 libopus-1.5.2        Totally open, royalty-free, highly versatile audio codec library
@@ -85,7 +75,6 @@ lua52-5.2.4nb1       Lightweight, embeddable scripting language (v5.2)
 lzo-2.10             Portable lossless data compression library
 mc-4.8.31            User-friendly file manager and visual shell
 mksh-59bnb4          MirBSD Korn Shell
-mktools-20220614     Collection of pkgsrc mk infrastructure tools
 mozilla-rootcerts-1.1.20241118 Root CA certificates from the Mozilla Project
 mpg123-1.32.9        MPEG layer 1, 2, and 3 audio player
 mpv-0.39.0nb3        Video player based on MPlayer and mplayer2
@@ -96,26 +85,6 @@ nspr-4.36            Platform-neutral API for system level and libc like functio
 nss-3.107            Libraries to support development of security-enabled applications
 openh264-2.5.0       H.264 encoder/decoder library from Cisco
 p11-kit-0.25.5       PKCS#11 module manager
-p5-Authen-SASL-2.1700nb1 Perl module to handle SASL authentication
-p5-Capture-Tiny-0.48nb7 Capture STDOUT and STDERR from Perl, XS or external programs
-p5-DBD-SQLite-1.76nb4 Perl DBI/DBD driver for sqlite databases (self contained)
-p5-DBI-1.645nb1      The database-independent Perl database access API
-p5-Digest-HMAC-1.05nb1 Perl5 module for HMAC
-p5-Email-Valid-1.204nb1 Perl5 module for testing validity of an email address
-p5-Error-0.17029nb5  Perl extension module for try/throw/catch exception handling
-p5-GSSAPI-0.28nb16   Perl extension providing access to the GSSAPIv2 library
-p5-IO-Socket-INET6-2.73nb3 Perl object interface for AF_INET/AF_INET6 domain sockets
-p5-IO-Socket-SSL-2.089nb1 Perl5 SSL socket interface class
-p5-MailTools-2.22    Perl5 modules related to mail applications
-p5-Mozilla-CA-20240924nb1 Mozilla's CA cert bundle for Perl
-p5-Net-DNS-1.48nb1   Perl5 module for DNS resolution
-p5-Net-Domain-TLD-1.75nb8 Work with TLD names
-p5-Net-IP-1.26nb12   Perl extension for manipulating IPv4/IPv6 addresses
-p5-Net-LibIDN-0.12nb16 Perl bindings for GNU Libidn
-p5-Net-SMTP-SSL-1.04nb8 Perl5 module providing SSL support for Net::SMTP
-p5-Net-SSLeay-1.94nb1 Perl5 module for using OpenSSL
-p5-Socket6-0.29nb6   Perl5 module to support getaddrinfo() and getnameinfo()
-p5-TimeDate-2.33nb4  Perl5 TimeDate distribution
 pango-1.54.0         Library for layout and rendering of text
 pciutils-3.11.1      PCI bus manipulation utility similar to NetBSD pcictl(8)
 pcre2-10.44          Perl Compatible Regular Expressions library (major version 2)
@@ -134,7 +103,6 @@ python312-3.12.8nb2  Interpreted, interactive, object-oriented programming langu
 readline-8.2nb2      GNU library that can recall and edit previous input
 screenfetch-3.9.9    Fetches system/theme information in terminal for screenshots
 scrot-1.11.1         Command line screen capture util like "import", but using imlib2
-setxkbmap-1.3.4      Set the keyboard map using the X Keyboard Extension
 shared-mime-info-2.4nb4 Core database of common types
 speex-1.2.1          Open-source, patent-free voice codec
 sqlite3-3.47.2       SQL Database Engine in a C Library
@@ -147,9 +115,6 @@ wayland-protocols-1.37 Additional wayland functionality
 x264-20231001        GPL licensed H.264 encoder
 x265-4.1             High Efficiency Video Coding (HEVC)
 xmlcatmgr-2.2nb1     XML and SGML catalog manager
-xrdb-1.2.2           X server resource database utility
-xset-1.2.5           X11 user preferences utility
-xsetroot-1.1.3       X root window parameter setting program
 xvidcore-1.3.7nb1    ISO MPEG-4 compliant video codec
 xxhash-0.8.2nb2      Extremely fast non-cryptographic hash algorithm
 yt-dlp-2024.12.13    Youtube-dl fork with new features and patches
