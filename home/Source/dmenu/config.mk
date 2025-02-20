@@ -16,8 +16,8 @@ X11LIB = /usr/X11R7/lib
 FREETYPELIBS = -lfontconfig -lXft
 FREETYPEINC = /usr/pkg/include/freetype2
 # OpenBSD (uncomment)
-FREETYPEINC = $(X11INC)/freetype2
-MANPREFIX = ${PREFIX}/man
+#FREETYPEINC = $(X11INC)/freetype2
+#MANPREFIX = ${PREFIX}/man
 
 # includes and libs
 INCS = -I$(X11INC) -I$(FREETYPEINC)
