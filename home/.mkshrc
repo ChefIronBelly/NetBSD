@@ -57,7 +57,7 @@ alias gc='git commit -m "adds and tweaks"'
 alias blankf='cdrecord dev=/dev/rcd0d blank=fast'
 alias blanka='cdrecord dev=/dev/rcd0d blank=all'
 alias rip='doas cdparanoia -g /dev/rcd0d -B'
-alias mp3='yt-dlp -x --audio-format mp3'
+alias mp3='yt-dlp -x --audio-format mp3 --ffmpeg-location /usr/pkg/bin/ffmpeg6'
 alias wet='curl https://wttr.in/det'
 alias tb='nc termbin.com 9999'
 
