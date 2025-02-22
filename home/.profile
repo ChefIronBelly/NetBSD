@@ -21,6 +21,8 @@ PATH=$HOME/.bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R7/bin:/usr/pkg/bin
 PATH=${PATH}:/usr/pkg/sbin:/usr/games:/usr/local/bin:/usr/local/sbin
 export PATH
 
+PKG_PATH=https://archive.netbsd.org/pub/pkgsrc-archive/packages/NetBSD/x86_64/10.1/All/
+
 if test -z "${XDG_RUNTIME_DIR}"; then
 	export XDG_RUNTIME_DIR=/tmp/$(id -u)-runtime-dir
 	if ! test -d "${XDG_RUNTIME_DIR}"; then
