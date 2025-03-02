@@ -6,7 +6,7 @@ default install using UFS default sizes
 
 # pkgin install sudo gh pkgconf mksh libXft 
 firefox geany mc mpv yt-dlp mpg123 liberation-ttf
-scrot screenfetch colorls
+scrot neofetch colorls
 
 # visudo enable wheel
 logout
@@ -23,4 +23,4 @@ $ cd Source /dwm /dmenu /st and sudo make clean install
 $ sudo mkdir /mnt/usb
 $ sudo audiocfg default 1
 
-# 250218
+# 250302
