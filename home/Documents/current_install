@@ -1,6 +1,6 @@
 # NetBSD-10.99-*
 
-# start w latest release 10.1 then upgrade w latest / NetBSD-10.99.*-amd64-install.img.gz
+# start w latest NetBSD-10.99.*-amd64-install.img.gz
 
 default install using UFS default sizes
 
