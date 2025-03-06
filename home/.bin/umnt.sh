@@ -1,3 +1,3 @@
 #! /bin/sh
 
-sudo umount /mnt
+sudo umount /mnt/usb
