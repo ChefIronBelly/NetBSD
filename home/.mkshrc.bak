@@ -60,7 +60,6 @@ alias rip='doas cdparanoia -g /dev/rcd0d -B'
 alias mp3='yt-dlp -x --audio-format mp3 --ffmpeg-location /usr/pkg/bin/ffmpeg6'
 alias wet='curl https://wttr.in/det'
 alias tb='nc termbin.com 9999'
-alias ifup='sudo ifconfig re0 inet 192.168.1.13 netmask 0xffffff00'
 
 alias umount='sudo umount /mnt/$1'
 alias view='imlib2_view'
