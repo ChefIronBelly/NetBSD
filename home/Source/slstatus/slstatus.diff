@@ -1,0 +1,134 @@
+diff --git a/Makefile b/Makefile
+index 7834257..129da64 100644
+--- a/Makefile
++++ b/Makefile
+@@ -13,7 +13,6 @@ COM =\
+ 	components/disk\
+ 	components/entropy\
+ 	components/hostname\
+-	components/ip\
+ 	components/kernel_release\
+ 	components/keyboard_indicators\
+ 	components/keymap\
+@@ -26,7 +25,6 @@ COM =\
+ 	components/temperature\
+ 	components/uptime\
+ 	components/user\
+-	components/volume\
+ 	components/wifi
+ 
+ all: slstatus
+diff --git a/components/ip.c b/components/ip.c
+deleted file mode 100644
+index 9476549..0000000
+--- a/components/ip.c
++++ /dev/null
+@@ -1,61 +0,0 @@
+-/* See LICENSE file for copyright and license details. */
+-#include <ifaddrs.h>
+-#include <netdb.h>
+-#include <stdio.h>
+-#include <string.h>
+-#if defined(__OpenBSD__)
+-	#include <sys/socket.h>
+-	#include <sys/types.h>
+-#elif defined(__FreeBSD__)
+-	#include <netinet/in.h>
+-	#include <sys/socket.h>
+-#endif
+-
+-#include "../slstatus.h"
+-#include "../util.h"
+-
+-static const char *
+-ip(const char *interface, unsigned short sa_family)
+-{
+-	struct ifaddrs *ifaddr, *ifa;
+-	int s;
+-	char host[NI_MAXHOST];
+-
+-	if (getifaddrs(&ifaddr) < 0) {
+-		warn("getifaddrs:");
+-		return NULL;
+-	}
+-
+-	for (ifa = ifaddr; ifa != NULL; ifa = ifa->ifa_next) {
+-		if (!ifa->ifa_addr)
+-			continue;
+-
+-		s = getnameinfo(ifa->ifa_addr, sizeof(struct sockaddr_in6),
+-		                host, NI_MAXHOST, NULL, 0, NI_NUMERICHOST);
+-		if (!strcmp(ifa->ifa_name, interface) &&
+-		    (ifa->ifa_addr->sa_family == sa_family)) {
+-			freeifaddrs(ifaddr);
+-			if (s != 0) {
+-				warn("getnameinfo: %s", gai_strerror(s));
+-				return NULL;
+-			}
+-			return bprintf("%s", host);
+-		}
+-	}
+-
+-	freeifaddrs(ifaddr);
+-
+-	return NULL;
+-}
+-
+-const char *
+-ipv4(const char *interface)
+-{
+-	return ip(interface, AF_INET);
+-}
+-
+-const char *
+-ipv6(const char *interface)
+-{
+-	return ip(interface, AF_INET6);
+-}
+diff --git a/config.mk b/config.mk
+index ead1859..af2bf7b 100644
+--- a/config.mk
++++ b/config.mk
+@@ -7,13 +7,13 @@ VERSION = 0
+ PREFIX = /usr/local
+ MANPREFIX = $(PREFIX)/share/man
+ 
+-X11INC = /usr/X11R6/include
+-X11LIB = /usr/X11R6/lib
++X11INC = -I/usr/X11R7/include -D_REENTRANT
++X11LIB = -Wl,-rpath,/usr/X11R7/lib -L/usr/X11R7/lib -lX11
+ 
+ # flags
+-CPPFLAGS = -I$(X11INC) -D_DEFAULT_SOURCE
++CPPFLAGS = $(X11INC) -D_DEFAULT_SOURCE
+ CFLAGS   = -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os
+-LDFLAGS  = -L$(X11LIB) -s
++LDFLAGS  = $(X11LIB) -s
+ # OpenBSD: add -lsndio
+ # FreeBSD: add -lkvm -lsndio
+ LDLIBS   = -lX11
+diff --git a/slstatus.h b/slstatus.h
+index 8ef5874..15ff7c1 100644
+--- a/slstatus.h
++++ b/slstatus.h
+@@ -27,10 +27,6 @@ const char *entropy(const char *unused);
+ /* hostname */
+ const char *hostname(const char *unused);
+ 
+-/* ip */
+-const char *ipv4(const char *interface);
+-const char *ipv6(const char *interface);
+-
+ /* kernel_release */
+ const char *kernel_release(const char *unused);
+ 
+@@ -76,9 +72,6 @@ const char *gid(const char *unused);
+ const char *uid(const char *unused);
+ const char *username(const char *unused);
+ 
+-/* volume */
+-const char *vol_perc(const char *card);
+-
+ /* wifi */
+ const char *wifi_essid(const char *interface);
+ const char *wifi_perc(const char *interface);
