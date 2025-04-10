@@ -13,7 +13,7 @@ logout
 
 ****
 as user
-$ chsh /usr/local/bin/mksh
+$ chsh /usr/pkg/bin/mksh
 
 $ mkdir ~/Source & cd Source
 $ git clone https://github.com/ChefIronBelly/NetBSD.git
@@ -23,4 +23,4 @@ $ cd Source /dwm /dmenu /st and sudo make clean install
 $ sudo mkdir /mnt/usb
 $ sudo audiocfg default 1
 
-# 250302
+# 250410
