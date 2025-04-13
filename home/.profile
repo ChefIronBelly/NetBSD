@@ -10,6 +10,7 @@ export LANG LC_CTYPE LC_ALL TZ
 export EDITOR=vi
 export EXINIT="se sm ai redraw sw=4"
 export VISUAL=${EDITOR}
+export TERM=xterm
 
 #export PAGER=more
 
@@ -21,7 +22,8 @@ PATH=$HOME/.bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R7/bin:/usr/pkg/bin
 PATH=${PATH}:/usr/pkg/sbin:/usr/games:/usr/local/bin:/usr/local/sbin
 export PATH
 
-PKG_PATH=https://archive.netbsd.org/pub/pkgsrc-archive/packages/NetBSD/x86_64/10.1/All/
+PKG_PATH="https://cdn.NetBSD.org/pub/pkgsrc/packages"
+PKG_PATH="$PKG_PATH//NetBSD/x86_64/10.0_2025Q1/All/"
 
 if test -z "${XDG_RUNTIME_DIR}"; then
 	export XDG_RUNTIME_DIR=/tmp/$(id -u)-runtime-dir
