@@ -1,4 +1,4 @@
-NetBSD purple 10.99.12 NetBSD 10.99.12 (GENERIC)
+NetBSD purple 10.99.14 NetBSD 10.99.14 (GENERIC)
 
 
 
