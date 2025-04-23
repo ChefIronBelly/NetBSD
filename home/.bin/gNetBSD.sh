@@ -14,11 +14,11 @@ echo $now
 mkdir -p /home/chef/HEAD/${now}/binary/sets && cd $_
 for file in kern-GENERIC modules base comp etc gpufw man text xbase xcomp xetc xfont xserver
 do
-    curl -C - -LO http://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/202504190100Z/amd64/binary/sets/${file}.tar.xz
+    curl -C - -LO http://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/202504221750Z/amd64/binary/sets/${file}.tar.xz
 done
 
 cd ..
 mkdir -p /home/chef/HEAD/${now}/binary/kernel && cd $_
-curl -C - -LO http://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/202504190100Z/amd64/binary/kernel/netbsd-GENERIC.gz
+curl -C - -LO http://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/202504221750Z/amd64/binary/kernel/netbsd-GENERIC.gz
 
-# sysupgrade auto /HEAD/latest
+# sysupgrade auto /home/chef/HEAD/date foo
