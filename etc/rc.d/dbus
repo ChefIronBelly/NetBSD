@@ -1,0 +1,33 @@
+#!/bin/sh
+#
+# $NetBSD: dbus.sh,v 1.11 2021/11/07 19:14:16 khorben Exp $
+#
+# PROVIDE: dbus
+# REQUIRE: DAEMON
+# KEYWORD: shutdown
+#
+# You will need to set some variables in /etc/rc.conf to start dbus:
+#
+# dbus=YES
+
+$_rc_subr_loaded . /etc/rc.subr
+
+name="dbus"
+rcvar=$name
+command="/usr/pkg/bin/dbus-daemon"
+command_args="--system --fork"
+pidfile="/var/run/dbus/pid"
+start_precmd=dbus_prestart
+
+dbus_prestart() {
+	dir="/var/run/dbus"
+	if test ! -d $dir; then
+		/bin/mkdir -p $dir
+		/bin/chmod 0755 $dir
+		/usr/sbin/chown dbus:dbus $dir
+	fi
+	/usr/pkg/bin/dbus-uuidgen --ensure
+}
+
+load_rc_config $name
+run_rc_command "$1"
