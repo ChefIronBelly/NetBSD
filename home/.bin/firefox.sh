@@ -2,4 +2,5 @@
 
 rm -f ~/firefox.core
 
-dbus-run-session firefox
+#dbus-run-session firefox
+firefox
