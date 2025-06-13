@@ -4,9 +4,11 @@
 
 default install using UFS default sizes
 
-# pkgin install sudo gh pkgconf mksh libXft 
+# pkgin install doas gh pkgconf mksh libXft 
 firefox geany mc mpv yt-dlp mpg123 liberation-ttf
 scrot fastfetch colorls ffmpeg6
+
+# echo permit persist :wheel > /usr/pkg/etc/doas.conf
 
 # visudo enable wheel
 logout
@@ -23,4 +25,4 @@ $ cd Source /dwm /dmenu /st and sudo make clean install
 $ sudo mkdir /mnt/usb
 $ sudo audiocfg default 1
 
-# 250529
+# 250613
