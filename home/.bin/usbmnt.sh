@@ -5,4 +5,4 @@
 # mount /dev/dk1 /mnt
 # 
 
-sudo mount_msdos /dev/sd0e /mnt/usb
+doas mount_msdos /dev/sd0e /mnt/usb
