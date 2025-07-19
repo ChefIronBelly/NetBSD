@@ -23,7 +23,8 @@ PATH=${PATH}:/usr/pkg/sbin:/usr/games:/usr/local/bin:/usr/local/sbin
 export PATH
 
 PKG_PATH="https://cdn.NetBSD.org/pub/pkgsrc/packages"
-PKG_PATH="$PKG_PATH//NetBSD/x86_64/10.0_2025Q1/All/"
+PKG_PATH="$PKG_PATH//NetBSD/x86_64/10.0_2025Q2/All/"
+export PKG_PATH
 
 if test -z "${XDG_RUNTIME_DIR}"; then
 	export XDG_RUNTIME_DIR=/tmp/$(id -u)-runtime-dir
