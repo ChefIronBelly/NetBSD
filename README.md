@@ -1,4 +1,4 @@
-NetBSD purple 10.99.15 NetBSD 10.99.15 (GENERIC)
+NetBSD momofuku 10.99.15 NetBSD 10.99.15 (GENERIC)
 
 
 
