@@ -67,7 +67,7 @@ alias view='imlib2_view'
 alias grab='imlib2_grab'
 alias stime='doas ntpdate -v -b in.pool.ntp.org'
 #alias date='date +"%a %b %d, $(date +"%I:%M")"'
-alias yt='yt-dlp --ffmpeg-location /usr/pkg/bin/ffmpeg6'
+alias yt='yt-dlp --ffmpeg-location /usr/pkg/bin/ffmpeg7'
 
 PS1=""
  case `id -u` in
