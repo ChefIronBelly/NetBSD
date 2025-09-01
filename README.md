@@ -1,5 +1,4 @@
-NetBSD momofuku 11.99.1 NetBSD 11.99.1 (GENERIC)
-
+NetBSD momofuku 11.0_BETA NetBSD 11.0_BETA (GENERIC) #0
 
 
 
