@@ -1,4 +1,4 @@
-NetBSD momofuku 11.0_BETA NetBSD 11.0_BETA (GENERIC) #0
+NetBSD 11.99.2 (GENERIC) #0: Thu Sep 11 06:03:28 UTC 2025
 
 
 
