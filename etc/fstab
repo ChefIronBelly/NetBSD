@@ -1,9 +1,0 @@
-# NetBSD /etc/fstab
-# See /usr/share/examples/fstab/ for more examples.
-NAME=c5a07a40-64a2-48ec-978f-40a0cda1337b		/	ffs	rw		 1 1
-NAME=d23661dc-2cb6-43f7-a15e-74ab5fb1f4d3		none	swap	sw,dp		 0 0
-tmpfs		/tmp	tmpfs	rw,-m=1777,-s=ram%25
-kernfs		/kern	kernfs	rw
-ptyfs		/dev/pts	ptyfs	rw
-procfs		/proc	procfs	rw
-tmpfs		/var/shm	tmpfs	rw,-m1777,-sram%25
