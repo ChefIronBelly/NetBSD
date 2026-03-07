@@ -1,0 +1,5 @@
+ftp ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/latest/images/NetBSD-11.99.5-amd64-install.img.gz
+
+gunzip NetBSD-11.99.5-amd64-install.img.gz
+
+doas dd if=NetBSD-11.99.5-amd64-install.img of=/dev/rsd0d bs=1m
