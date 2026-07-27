@@ -23,4 +23,4 @@ $ cd Source /dwm /dmenu /st and sudo make clean install
 $ doas mkdir /mnt/usb
 $ doas audiocfg default 1
 
-# 250727
+# 260727
