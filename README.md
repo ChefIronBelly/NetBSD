@@ -1,4 +1,4 @@
-NetBSD 11.99.7  (GENERIC)
+NetBSD 11.99.8  (GENERIC)
 
 
 
