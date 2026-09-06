@@ -1,6 +1,7 @@
 # NetBSD-11.99-*
 
-# start w latest NetBSD-11.99.*-amd64-install.img.gz
+# install NetBSD-11
+# then upgrade w latest NetBSD-11.99.*-amd64-install.img.gz
 
 default install using UFS default sizes
 
