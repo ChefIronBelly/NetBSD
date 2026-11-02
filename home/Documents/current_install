@@ -22,6 +22,6 @@ $ cp user files and root files from /boot /etc /home to system
 
 $ cd Source /dwm /dmenu /st and sudo make clean install
 $ doas mkdir /mnt/usb
-$ doas audiocfg default 1
+$ doas audiocfg default 0
 
-# 260727
+# 261102
