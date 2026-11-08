@@ -12,7 +12,7 @@ static const char col_gray1[] 		= "#3b4252";
 static const char col_gray2[] 		= "#2f3441";
 static const char col_gray3[] 		= "#eceff4";
 static const char col_gray4[] 		= "#49688e";
-static const char col_cyan[] 		= "#00FFFF";
+static const char col_cyan[]        = "#7aa2f7";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     // Normal mode ice white  Nord grey  Darker Nord grey
